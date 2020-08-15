@@ -6,6 +6,7 @@ git pull
 #copy stuff to update
 cp /etc/rc.local ./etc
 cp /etc/ser2net.conf ./etc
+cp /usr/local/bin/* ./usr/local/bin
 apt list --installed > apt.installed
 
 #Ensure everything belongs to this account
