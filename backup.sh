@@ -7,7 +7,9 @@ git pull
 cp /etc/rc.local ./etc
 cp /etc/ser2net.conf ./etc
 cp /usr/local/bin/* ./usr/local/bin
+
 apt list --installed > apt.installed
+crontab -l > crontab.config
 
 #Ensure everything belongs to this account
 sudo chown pi:pi . -R
