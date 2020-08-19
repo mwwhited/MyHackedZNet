@@ -6,7 +6,7 @@ git pull
 #copy stuff to update
 cp /etc/rc.local ./etc
 cp /etc/ser2net.conf ./etc
-cp -r /etc/network/* ./etc/
+cp -r /etc/network/* ./etc/network
 cp /usr/local/bin/* ./usr/local/bin
 
 apt list --installed > apt.installed
