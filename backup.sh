@@ -13,7 +13,8 @@ cp /usr/local/bin/* ./usr/local/bin
 apt list --installed > apt.installed
 crontab -l > crontab.config
 
-sed -i s/psk=\".*\"/psk=\"******\"/ etc/wpa_supplicant/wpa_supplicant.conf
+sed -i s/ssid=\".*\"/ssid=\"WIFI_NETWORK\"/ etc/wpa_supplicant/wpa_supplicant.conf
+sed -i s/psk=\".*\"/psk=\"PASSWORD\"/ etc/wpa_supplicant/wpa_supplicant.conf
 
 #Ensure everything belongs to this account
 sudo chown pi:pi . -R
