@@ -12,6 +12,9 @@
 # By default this script does nothing.
 
 # Print the IP address
+
+iwconfig wlan0 power off
+
 _IP=$(hostname -I) || true
 if [ "$_IP" ]; then
   printf "My IP address is %s\n" "$_IP"

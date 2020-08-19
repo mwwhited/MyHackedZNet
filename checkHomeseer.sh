@@ -9,6 +9,9 @@ if [ $RETVAL -eq 0 ]; then
 	/usr/local/bin/led.sh green
 else
 	/usr/local/bin/led.sh yellow
+	/sbin/ifdown wlan0
+	sleep 5
+	/sbin/ifup --force wlan0
 fi
 
 exit $RETVAL
